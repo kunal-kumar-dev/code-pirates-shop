@@ -29,7 +29,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-300">Call Us</p>
-                  <p className="font-semibold">+91 98765 43210</p>
+                  <p className="font-semibold">+91 00000 00000</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-300">Location</p>
-                  <p className="font-semibold">123 Tech Street, Bangaluru, India</p>
+                  <p className="font-semibold">Bhagalpur College of Engineering (BCE), Bhagalpur</p>
                 </div>
               </div>
             </div>

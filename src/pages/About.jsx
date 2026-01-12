@@ -1,12 +1,11 @@
-import React from 'react';
-import { Code, Database, Layout, Moon, Users, Github } from 'lucide-react';
+import { Code, Database, Github, Layout, Moon, Users } from 'lucide-react';
 
 // --- 1. IMPORT LOCAL IMAGES HERE ---
+import bittuPic from '../assets/bittu.jpg';
 import kunalPic from '../assets/kunal.jpg';
+import niranjanPic from '../assets/niranjan.jpg';
 import piyushPic from '../assets/piyush.jpg';
 import sushilPic from '../assets/sushil.jpg';
-import niranjanPic from '../assets/niranjan.jpg';
-import bittuPic from '../assets/bittu.jpg';
 
 const About = () => {
   return (
@@ -146,7 +145,7 @@ const About = () => {
           This project represents our dedication to learning and building.
         </p>
         <button className="bg-gray-900 dark:bg-gray-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-brand-secondary hover:text-brand-primary transition inline-flex items-center gap-2">
-          <Github size={20} /> View on GitHub
+          <Github size={20} /> <a href="https://github.com/kunal-kumar-dev/code-pirates-shop.git"> View on GitHub </a>
         </button>
       </div>
 

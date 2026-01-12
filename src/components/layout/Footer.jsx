@@ -73,7 +73,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-400 text-sm mb-6">
               <div className="flex items-center gap-2">
                 <MapPin size={16} className="text-brand-secondary" />
-                <span>Bhagalpur Collage of engineering</span>
+                <span>Bhagalpur College of Engineering (BCE), Bhagalpur</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={16} className="text-brand-secondary" />
