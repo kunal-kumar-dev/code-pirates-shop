@@ -13,21 +13,21 @@ const Footer = () => {
   return (
     <footer className="bg-brand-primary text-white pt-16 pb-8 border-t border-gray-800 mt-auto">
       <div className="container mx-auto px-4">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          
+
           {/* --- Brand Info Section with Logo --- */}
           <div>
             <Link to="/" onClick={scrollToTop} className="inline-block mb-4">
               {/* Logo Image Implementation */}
-              <img 
-                src={logo} 
-                alt="Code Pirates Shop" 
-                className="h-12 w-auto object-contain" 
+              <img
+                src={logo}
+                alt="Code Pirates Shop"
+                className="h-12 w-auto object-contain"
               />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Your premium destination for tech, fashion, and lifestyle. 
+              Your premium destination for tech, fashion, and lifestyle.
               We ship pirate-grade quality products across the seven seas.
             </p>
           </div>
@@ -76,15 +76,17 @@ const Footer = () => {
                 <span>Bhagalpur College of Engineering (BCE), Bhagalpur</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone size={16} className="text-brand-secondary" />
-                <span>+91 000000000</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail size={16} className="text-brand-secondary" />
-                <span>support@codepirates.com</span>
+                <a href="tel:+910000000000" className="flex items-center gap-2">
+                  <Phone size={16} /> +91 0000000000
+                </a>
+
+                <a href="mailto:support@codepirates.com" className="flex items-center gap-2">
+                  <Mail size={16} /> support@codepirates.com
+                </a>
+
               </div>
             </div>
-            
+
             {/* Social Icons */}
             <div className="flex gap-4">
               <Facebook className="text-gray-400 hover:text-blue-500 cursor-pointer transition" size={20} />

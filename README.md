@@ -1,139 +1,271 @@
-# 🏴‍☠️ Code Pirates Shop
 
-> **Innovate. Code. Conquer.**
+# 🏴‍☠️ Code Pirates Shop  
+### Modern E-Commerce Web Application (Frontend)
 
-A premium, fully responsive **E-commerce Single Page Application (SPA)** built using **React.js** and **Tailwind CSS**.  
-This project is designed to closely simulate a **real-world shopping platform**, focusing on clean UI, smooth UX, scalable architecture, and persistent state management.
+**Code Pirates Shop** is a modern, responsive e-commerce web application built using **React, Tailwind CSS, and Context API**.  
+This project simulates a real-world online shopping experience and was developed as a **final project for a paid internship**, with a strong focus on clean architecture, UI/UX, and state management.
+
 ---
 
 ## 🚀 Live Demo
-🔗 **Live URL:**  
-_Add your Netlify or Vercel deployment link here_
+**Live URL:** https://code-pirates-shop.netlify.app/
 
 ---
 
-## ✨ Key Features
+## 📌 Key Features# 🏴‍☠️ Code Pirates Shop
 
-### 🎨 UI / UX & Design
-- Premium **Gold & Navy Blue** theme inspired by modern e-commerce platforms
-- Fully responsive design (mobile, tablet, desktop)
-- **Dark Mode** with toggle switch and saved user preference
-- Smooth animated hamburger menu for mobile navigation
+A modern, responsive **E-commerce web application** built with **React + Vite**, showcasing real-world shopping features such as product listing, filtering, cart management, checkout flow, and dark mode support.
+
+This project was developed as a **group project and internship final submission**, focusing on clean UI, proper state management, and practical frontend architecture.
 
 ---
 
-### 🛍️ Shopping Experience
-- **Smart Cart System**
-  - Add and remove products
-  - Quantity management
-  - Real-time price calculation (Subtotal + 18% GST)
-  - Persistent cart using **LocalStorage**
-- **Shop Page**
-  - Sidebar category filters
-  - Price sorting (Low → High, High → Low)
-- **Checkout Flow**
-  - Professional checkout form
-  - Input validation
-  - Order success confirmation
+## 🚀 Live Features
+
+- Product listing from a real API
+- Category filtering and price sorting
+- Add to cart / remove from cart
+- Cart persistence using localStorage
+- Checkout flow with order summary
+- Dark mode toggle
+- Fully responsive (mobile, tablet, desktop)
+- Clean UI using Tailwind CSS
 
 ---
 
-### ⚡ Technology & Performance
-- Dynamic product data fetched from **FakeStore API**
-- Fast build and loading performance using **Vite**
-- React Suspense with loading indicators
-- Toast notifications for user actions (Add to Cart, Remove, etc.)
+## 🧠 Tech Stack
 
----
-
-## 🛠️ Tech Stack
-
-| Category | Technology |
-|--------|-----------|
-| Frontend Framework | React.js (Vite) |
-| Styling | Tailwind CSS (v3.4) |
-| State Management | React Context API |
-| Routing | React Router DOM (v6) |
-| Icons | Lucide React |
-| Notifications | React Hot Toast |
-
----
-
-## ⚙️ Installation & Setup
-
-Follow these steps to run the project locally:
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/your-username/code-pirates-shop.git
-cd code-pirates-shop
-```
-
-### 2️⃣ Install Dependencies
-```bash
-npm install
-```
-
-### 3️⃣ Start Development Server
-```bash
-npm run dev
-```
-
-### 4️⃣ Open in Browser
-```text
-http://localhost:5173
-```
+- React.js (Hooks)
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Context API
+- FakeStore API
+- Lucide Icons
+- React Hot Toast
 
 ---
 
 ## 📂 Project Structure
 
-```text
 src/
-├── assets/            # Images, logos
-├── components/        # Reusable UI components
+components/
+layout/
+Navbar.jsx
+Footer.jsx
+product/
+ProductCard.jsx
+context/
+CartContext.jsx
+ThemeContext.jsx
+pages/
+Home.jsx
+Shop.jsx
+Cart.jsx
+Checkout.jsx
+Login.jsx
+About.jsx
+Contact.jsx
+services/
+api.js
+utils/
+helper.js
+
+---
+
+## 🛒 Cart System
+
+- Managed using React Context API
+- Persistent via localStorage
+- Dynamic subtotal, GST (18%), and total calculation
+- Auto clear after checkout
+
+---
+
+## 🌙 Dark Mode
+
+- Tailwind CSS dark class strategy
+- Global ThemeContext
+- Instant toggle without reload
+
+---
+
+## ⚙️ Setup Instructions
+
+git clone https://github.com/kunal-kumar-dev/code-pirates-shop.git
+
+npm install
+
+npm run dev
+
+http://localhost:5173
+
+---
+
+## 👥 Team – Code Pirates
+
+Kunal Kumar – Team Lead  
+Piyush Kumar – Developer  
+Sushil Kumar – Developer  
+Niranjan Kumar – UI/UX Designer  
+Bittu Kumar – Tester  
+
+---
+
+## 📄 License
+
+Educational and internship use only.
+
+
+- 🛒 **Dynamic Cart System**
+  - Add, remove, and update product quantities
+  - Persistent cart using `localStorage`
+
+- 🌙 **Dark / Light Mode**
+  - Manual theme toggle using Context API
+  - Tailwind class-based dark mode
+
+- 🔍 **Product Filtering & Sorting**
+  - Filter by category
+  - Sort by price (Low → High, High → Low)
+
+- 📦 **Checkout Flow**
+  - Cart validation before checkout
+  - Order summary with GST calculation
+  - Order success confirmation screen
+
+- 🎨 **Modern UI**
+  - Fully responsive (mobile-first)
+  - Clean, professional design system
+  - Smooth animations and transitions
+
+- ⚙️ **Reusable Architecture**
+  - Centralized API service
+  - Global state management via Context
+  - Utility functions for formatting
+
+---
+
+## 🧠 Tech Stack
+
+| Category | Technology |
+|------|-----------|
+| Frontend | React (Vite) |
+| Styling | Tailwind CSS |
+| State Management | React Context API |
+| Routing | React Router DOM |
+| Icons | Lucide React |
+| Notifications | React Hot Toast |
+| API | FakeStore API |
+| Tooling | Vite, ES6 |
+
+---
+
+## 🗂️ Project Structure
+
+```
+src/
+├── components/
 │   ├── layout/        # Navbar, Footer
-│   └── product/       # ProductCard, Filters
+│   └── product/       # ProductCard
+├── pages/             # Home, Shop, Cart, Checkout, Login, About, Contact
 ├── context/           # CartContext, ThemeContext
-├── pages/             # Application Pages
-│   ├── Home.jsx       # Hero banner & featured products
-│   ├── Shop.jsx       # Product listing with filters
-│   ├── Cart.jsx       # Cart management & billing
-│   ├── Checkout.jsx   # Checkout & shipping form
-│   ├── About.jsx      # Team & project story
-│   ├── Contact.jsx    # Contact form
-│   └── Login.jsx      # Authentication UI
-├── services/          # API handling logic
-├── utils/             # Helper utilities (currency formatter)
-├── App.jsx            # Main routing setup
-└── main.jsx           # Application entry point
+├── services/          # API service (api.js)
+├── utils/             # Helper utilities (formatPrice)
+├── assets/            # Images & logos
+├── App.jsx
+├── main.jsx
+└── index.css
 ```
 
 ---
 
-## 👥 The Crew – Code Pirates 🏴‍☠️
+## 🔄 State Management Overview
 
-| Name | Registration No. | Role |
-|-----|------------------|------|
-| Kunal Kumar | 25105108901 | Team Lead |
-| Piyush Kumar | 25105108902 | Developer |
-| Sushil Kumar | 25105108908 | Developer |
-| Niranjan Kumar | 25105108909 | UI / UX Designer |
-| Bittu Kumar | 25105165908 | Tester |
+- **CartContext**
+  - Manages cart state globally
+  - Handles add, remove, clear operations
+  - Syncs cart with `localStorage`
+  - Provides derived data like total item count
 
----
-
-## 🤝 Contributing
-
-This is an **academic project**, but contributions are welcome.
-
-1. Fork the repository  
-2. Create a feature branch  
-3. Commit your changes  
-4. Push to the branch  
-5. Open a Pull Request  
+- **ThemeContext**
+  - Controls dark/light theme
+  - Uses Tailwind `dark` class strategy
 
 ---
 
+## 🌐 API Integration
 
-© 2026 **Code Pirates Shop**. All Rights Reserved.
+- Product data fetched from **FakeStore API**
+- Centralized API layer for scalability
+- Graceful error handling for failed requests
+
+> ⚠️ Authentication and payment are **frontend simulations only**, implemented for UI and flow demonstration.
+
+---
+
+## 🧪 Demo Credentials (UI Only)
+
+```
+Email: admin@codepirates.com  
+Password: admin123
+```
+
+---
+
+## 🛠️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/kunal-kumar-dev/code-pirates-shop.git
+
+# Navigate to project folder
+cd code-pirates-shop
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## 📈 Learning Outcomes
+
+This project demonstrates:
+- Component-based architecture
+- Real-world React patterns
+- Context API for global state
+- Tailwind CSS best practices
+- Clean code organization
+- Internship-level frontend engineering
+
+---
+
+## 🚧 Future Improvements
+
+- Product detail pages
+- Backend-based authentication
+- Real payment gateway integration
+- Stock & inventory handling
+- Improved accessibility (ARIA)
+
+---
+
+## 👨‍💻 Team – Code Pirates
+
+- **Kunal Kumar** – Team Lead & Frontend Developer  
+- Piyush Kumar – Developer  
+- Sushil Kumar – Developer  
+- Niranjan Kumar – UI/UX Designer  
+- Bittu Kumar – Tester  
+
+---
+
+## 📄 License
+This project is for **educational and internship demonstration purposes only**.
+
+---
+
+### ⭐ If you found this project useful, feel free to star the repository!

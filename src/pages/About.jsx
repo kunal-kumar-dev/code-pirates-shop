@@ -10,7 +10,7 @@ import sushilPic from '../assets/sushil.jpg';
 const About = () => {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300">
-      
+
       {/* --- HERO SECTION --- */}
       <div className="relative bg-brand-primary py-20 px-4 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-secondary rounded-full mix-blend-overlay filter blur-3xl opacity-10 animate-pulse"></div>
@@ -24,7 +24,7 @@ const About = () => {
             Behind the Code: <span className="text-brand-secondary">Code Pirates</span>
           </h1>
           <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            This isn't just an E-commerce website; it's a showcase of modern web development. 
+            This isn't just an E-commerce website; it's a showcase of modern web development.
             Built from scratch to simulate a real-world shopping experience.
           </p>
         </div>
@@ -33,7 +33,7 @@ const About = () => {
       {/* --- PROJECT EXPLANATION SECTION --- */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left: The Story */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
@@ -41,12 +41,12 @@ const About = () => {
             </h2>
             <div className="prose dark:prose-invert text-gray-600 dark:text-gray-300 space-y-4">
               <p>
-                As computer science students, we wanted to bridge the gap between theory and reality. 
+                As computer science students, we wanted to bridge the gap between theory and reality.
                 We didn't just want to print <code>Hello World</code>; we wanted to build something that feels <strong>alive</strong>.
               </p>
               <p>
-                <strong>Code Pirates Shop</strong> is a fully functional Single Page Application (SPA). 
-                We integrated real-world features like a dynamic cart system, live API data fetching, 
+                <strong>Code Pirates Shop</strong> is a fully functional Single Page Application (SPA).
+                We integrated real-world features like a dynamic cart system, live API data fetching,
                 and a professional Dark Mode to prove that we are ready for the industry.
               </p>
               <p className="border-l-4 border-brand-secondary pl-4 italic">
@@ -94,41 +94,41 @@ const About = () => {
 
           {/* Team Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            
+
             {/* 2. PASS THE IMAGE VARIABLES HERE */}
-            
-            <TeamCard 
-              name="Kunal Kumar" 
-              reg="25105108901" 
-              role="Team Lead" 
+
+            <TeamCard
+              name="Kunal Kumar"
+              reg="25105108901"
+              role="Team Lead"
               image={kunalPic}
             />
-            
-            <TeamCard 
-              name="Piyush Kumar" 
-              reg="25105108902" 
-              role="Developer" 
+
+            <TeamCard
+              name="Piyush Kumar"
+              reg="25105108902"
+              role="Developer"
               image={piyushPic}
             />
-            
-            <TeamCard 
-              name="Sushil Kumar" 
-              reg="25105108908" 
-              role="Developer" 
+
+            <TeamCard
+              name="Sushil Kumar"
+              reg="25105108908"
+              role="Developer"
               image={sushilPic}
             />
-            
-            <TeamCard 
-              name="Niranjan Kumar" 
-              reg="25105108909" 
-              role="UI/UX Designer" 
+
+            <TeamCard
+              name="Niranjan Kumar"
+              reg="25105108909"
+              role="UI/UX Designer"
               image={niranjanPic}
             />
-            
-            <TeamCard 
-              name="Bittu Kumar" 
-              reg="25105165908" 
-              role="Tester" 
+
+            <TeamCard
+              name="Bittu Kumar"
+              reg="25105165908"
+              role="Tester"
               image={bittuPic}
             />
 
@@ -144,9 +144,15 @@ const About = () => {
         <p className="text-gray-500 dark:text-gray-400 mb-6">
           This project represents our dedication to learning and building.
         </p>
-        <button className="bg-gray-900 dark:bg-gray-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-brand-secondary hover:text-brand-primary transition inline-flex items-center gap-2">
-          <Github size={20} /> <a href="https://github.com/kunal-kumar-dev/code-pirates-shop.git"> View on GitHub </a>
-        </button>
+        <a
+          href="https://github.com/kunal-kumar-dev/code-pirates-shop.git"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-gray-900 dark:bg-gray-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-brand-secondary hover:text-brand-primary transition"
+        >
+          <Github size={20} /> View on GitHub
+        </a>
+
       </div>
 
     </div>
@@ -156,12 +162,12 @@ const About = () => {
 // --- Team Card Component ---
 const TeamCard = ({ name, reg, role, image }) => (
   <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl text-center border border-gray-200 dark:border-gray-700 hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
-    
+
     <div className="relative w-24 h-24 mx-auto mb-4">
       {/* 3. Image is rendered here */}
-      <img 
-        src={image} 
-        alt={name} 
+      <img
+        src={image}
+        alt={name}
         className="w-full h-full object-cover rounded-full border-4 border-brand-secondary shadow-sm group-hover:scale-105 transition"
       />
     </div>

@@ -12,7 +12,18 @@ const ProductCard = ({ product }) => {
     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
       
       {/* Image Section */}
-      <div className="h-48 p-4 flex items-center justify-center relative overflow-hidden bg-white">
+      <div className="
+  h-48 
+  p-4 
+  flex 
+  items-center 
+  justify-center 
+  relative 
+  overflow-hidden 
+  bg-white 
+  dark:bg-gray-900
+">
+
         <img 
           src={product.image} 
           alt={product.title} 
